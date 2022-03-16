@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Main page</title>
+    </head>
+    <body>
+      <from action="/hello" autocomplete="off" notvalidate>
+          <fieldset style="max-width:500px">
+        <legend>User Profile</legend>
+        <lable for="un">user name</lable>
+        <input type="text" name="user name" placeholder="your name..." id="un"><br>
+        <label for="pwd">password</label>
+        <input type="password" name="password" placeholder="your password..." id="pwd"><br>
+        <label for="loc">location</label>
+        <input type="text" name="loc" placeholder="location city..." id="loc"><br>
+        <lable for="email">email</lable>
+        <input type="email" name="email" placeholder="email here..." id="email" requied autocomplete="on"><br>
+        <lable for="mob">mobile</lable>
+        <input type="tel" name="mob" placeholder=" mob no..." id="mob" requied pattern="9[0-9]{9}">
+        </fieldset>
+        <fieldset style="max-width:500px;">
+            <legend>Interesed on</legend>
+        <input type="checkbox" name="subcription" id="c1">
+        <label for="c1">newsletter</label><br>
+        <input type="checkbox" name="subcription" id="c1">
+        <label for="c1">Promotions</label><br>
+
+        <input type="checkbox" name="subcription" id="c1">
+        <label for="c1">email notification</label><br>
+
+        <input type="checkbox" name="subcription" id="c1">
+        <label for="c1">sms</label><br>
+    </fieldset>
+    <fieldset>
+        <legend>time slot</legend>
+        <input type="radio" name="slot" id="r1">
+        <label for="r1">morning[8:00-11:00]</label><br>
+        <input type="radio" name="slot" id="r2">
+        <label type="r2">evening[4:00-6:00]</label>
+    </fieldset>
+
+        <input type="submit" value="submit">
+      </from>  
+    </body>
+</html>
