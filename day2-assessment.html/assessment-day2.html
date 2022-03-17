@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <title>Student Registrations Form</title>
+    </head>
+    <body>
+        <h1>Student Registrations Form</h1>
+        <form action="/demo">
+        <fieldset style="max-width: 500px;">
+            <legend>Student Details</legend>
+            <table>
+                <tr>
+                    <td><label for="name">Name</label></td>
+                    <td><input type="text" id="name" placeholder="Enter your name.." required></td>
+                </tr>
+                <tr>
+                    <td><label for="address">Address</label></td>
+                    <td><input type="text" id="address" placeholder="Enter your address.."></td>
+                </tr>
+                
+                <tr>
+                    <td><label>City</label></td>
+                    <td><input list="cities" placeholder="Select our City">
+                        <datalist id="cities">
+                            <option value="anantapur">
+                            <option value="bangalore">
+                            <option value="ap">
+                            <option value="delhi">
+                            <option value="karnataka">
+                            <option value="noida">
+                            <option value="Other">    
+                        </datalist>
+                    </td>
+                </tr>
+                <tr>
+                    <td><label>Email</label></td>
+                    <td><input type="email" placeholder="example@gmail.com" required></td>
+                </tr>
+                <tr>
+                    <td><label>Mobile No</label></td>
+                    <td><input type="tel" name="mobno" placeholder="tel"9[0-9]{10}></td>
+                </tr>
+                <tr>
+                    <td><label for="dob">Date of Birth</label></td>
+                    <td><input type="date" id="dob" min="2001-01-01"></td>
+                </tr>
+            </table>
+        </fieldset>
+        <fieldset style="max-width: 500px;">
+            <legend>Courses</legend>
+            <table>
+                <tr>
+                    <td><label>Course selected</label></td>
+                    <td><select name="courses" selected="none">
+                            <option value="selectone">Select one</option>
+                            <option value="Java">Java</option>
+                            <option value="Python">Python</option>
+                            <option value="C++">C++</option>
+                            <option value="C#">C#</option>
+                            <option value="HTML-CSS">HTML-CSS</option>
+                            <option value="JavaScript">JavaScript</option>
+                        </select>
+                    </td>
+                </tr>
+            </table>
+        </fieldset>
+        <fieldset style="max-width: 500px;">
+            <legend>Hobbies</legend>
+            <table>
+                <tr><td><input type="checkbox" name="cooking" id="h1"><label for="h1">cooking</label></td></tr>
+                <tr><td><input type="checkbox" name=" online games" id="h4"><label for="h4">online games</label></td></tr>
+                <tr><td><input type="checkbox" name="music" id="h5"><label for="h5">music</label></td></tr>
+            </table>
+        </fieldset>
+        <fieldset style="max-width: 500px;">
+            <legend>Slots Available</legend>
+            <table>
+                <tr><td><input type="radio" name="slot" id="h1"><label for="h1">Morning(8.00am - 10.00am)</label></td></tr>
+                <tr><td><input type="radio" name="slot" id="h2"><label for="h2">Afternoon(1.00pm - 2.00pm)</label></td></tr>
+                <tr><td><input type="radio" name="slot" id="h3"><label for="h3">Evening(6.00pm - 8.00pm)</label></td></tr>
+            </table>
+        </fieldset>
+        <table>
+            <tr>
+                <td><input type="submit" value="Submit"></td>
+                <td><input type="reset" value="Reset"></td>
+            </tr>
+        </table>
+    </form>
+    </body>
+</html>
